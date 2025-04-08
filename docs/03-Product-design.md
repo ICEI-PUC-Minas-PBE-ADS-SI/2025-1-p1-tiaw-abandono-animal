@@ -2,48 +2,14 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Product-discovery.md"> Product discovery</a></span>
 
+## Histórias de Usuários
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Neste momento, transformam-se os insights e validações obtidos em soluções tangíveis e utilizáveis. Esta fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia, e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que especificam a interface e a experiência do usuário.
-
-
-## Histórias de usuários
-
-Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas  ⚠️ EXEMPLO ⚠️         | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões        ⚠️ EXEMPLO ⚠️         | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
-
-> **Links úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (user stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 common user story mistakes](https://airfocus.com/blog/user-story-mistakes/)
+![Histórias de Usuários](https://github.com/user-attachments/assets/a42468cc-1f30-4c05-b3ca-0040304c42a0)
 
 
 ## Proposta de valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para a persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que auxilia na definição do tipo de produto ou serviço que melhor atende às personas previamente estabelecidas.
-
-
-> **Links úteis**:
-> - [O que é o canvas da proposta de valor e como usar?](https://www.youtube.com/watch?v=Iqb-8Q_eiiA)
+![Proposta de Valor](https://github.com/user-attachments/assets/a6f7a930-60b9-4e3b-8833-3a401e3019a2)
 
 ## Requisitos
 
@@ -52,45 +18,41 @@ As tabelas a seguir apresentam os requisitos funcionais e não funcionais que de
 ### Requisitos funcionais
 
 | ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| ------ | -------------------------------------------------------- | ---------- |
+| RF-001 | O sistema deve permitir o usuário se cadatrar e fazer login | ALTA       |
+| RF-002 | O sistema deve permitir o usuário fazer cadastro de ONGs ou para trabalhos voluntários | ALTA     |
+| RF-003 | O sistema deve permitir fazer denúncias de casos de maus-tratos | ALTA       |
+| RF-004 | O sistema deve permitir registrar um animal abandonado com fotos e localização | ALTA       |
+| RF-005 | O sistema deve exibir um catálogo de animais disponíveis para adoção | ALTA       |
+| RF-006 | O sistema deve permitir que os usuários informem localização, fotos e descrições de um animal abandonado | MÉDIA      |
+| RF-007 | O sistema deve enviar notificações para os abrigos cadastrados quando um novo animal for resgatado | MÉDIA       |
+| RF-008 | O sistema deve permitir que as pessoas possam contribuir com doações | ALTA   |
+| RF-009 | O sistema deve permitir que pessoas possam adotar animais  | ALTA       |
 
 ### Requisitos não funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em dispositivos móveis ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar as requisições do usuário em no máximo 3 segundos ⚠️ EXEMPLO ⚠️          | BAIXA      |
+| RNF-001 | O sistema deve carregar em menos de 3 segundos | BAIXA    |
+| RNF-002 | O sistema deve estar disponível 24 horas por dia | ALTA      |
+| RNF-003 | O sistema deve suportar um alto número de acessos simultâneos sem comprometer a performance | MÉDIA     |
+| RNF-004 | O sistema deve seguir as diretrizes da LGPD (Lei Geral de Proteção de Dados), garantindo o sigilo das denúncias anônimas | ALTA     |
+| RNF-005 | O sistema deve ser responsivo para rodar em dispositivos móveis | BAIXA    |
+| RNF-006 | O tempo de carregamento das páginas com listas de animais não deve ultrapassar 2 segundos em conexões estáveis.  | MÉDIA     |
+| RNF-007 | A navegação deve ser clara, com menus bem organizados e linguagem acessível. | ALTA     |
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-O projeto está restrito aos itens apresentados na tabela a seguir.
-
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre ⚠️ EXEMPLO ⚠️ |
-|002| Não é permitido o desenvolvimento de um módulo de back-end  ⚠️ EXEMPLO ⚠️  |
+|001| O projeto deverá ser entregue até o final do semestre |
+|002| O sistema será limitado à aplicação web, sem versão para aplicativos nativos.  |
+|003| O sistema deverá ser desenvolvida com tecnologias livres e de código aberto (ex: HTML, CSS, JavaScript, etc.) |
+|004| Todos os animais disponíveis para adoção devem ser registrados no sistema com informações detalhadas, incluindo nome, idade, raça, estado de saúde e histórico de vacinação.  |
+|005| Os usuários devem se cadastrar no sistema para realizar ações como adotar um animal ou fazer uma denúncia. O cadastro deve incluir informações pessoais, como nome, endereço, telefone e e-mail. |
+|006| Um usuário não pode adotar mais de um animal por vez  |
+|007| As denúncias devem ser analisadas e respondidas em um prazo máximo de 48 horas.  |
+|008| O sistema deve exigir que os adotantes aceitem um termo de responsabilidade que descreva os cuidados necessários para o animal.
+  |
