@@ -3,11 +3,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Para o desenvolvimento do projeto, adototamos uma abordagem centrada no usuário, visando uma solução funcional, empática e intuitiva. Foram realizadas entrevistas com possíveis usuários e ONGs para compreender o problema do abandono de animais, suas causas e os desafios enfrentados no processo de adoção. Com base nessas informações, foram desenvolvidos o Product Discovery e o Product Design utilizando o Miro, onde foram mapeados fluxos, personas e jornadas de uso. O design da interface foi elaborado no Figma, com participação colaborativa da equipe na criação dos wireframes e protótipos interativos.
 
 ## Relação de ambientes de trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+|  Categoria    | Plataforma                                   | Link |
+| ------ | -------------------------------------------------------- | ---------- |
+| Mapeamento e ideação | Miro | https://miro.com/app/dashboard/ |    
+| Prototipagem de interfaces | Figma |(https://www.figma.com/files/team/1490786836665517932/project/364412873/Abandono-Animal?fuid=1490786834889552139) |
+| Documentação do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-abandono-animal/tree/main | 
 
 ## Controle de versão
 
