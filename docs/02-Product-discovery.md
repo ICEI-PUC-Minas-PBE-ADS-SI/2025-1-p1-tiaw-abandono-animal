@@ -8,35 +8,20 @@
 
 **✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta etapa, é necessário aplicar a metodologia de Design Thinking para compreender de forma mais profunda o problema a ser abordado. Durante esse processo, devem ser elaborados os seguintes elementos:
->
-> * **Matriz CSD**:  também conhecida como Matriz de Alinhamento, trata-se de uma ferramenta utilizada no Design Thinking para organizar informações, facilitando a tomada de decisões e a solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que permite identificar e entender o grupo de pessoas e entidades que devem ser analisados e consultados para obter uma visão mais ampla do problema;
-> * **Entrevistas qualitativas**: uma série de entrevistas qualitativas a fim de validar suposições e esclarecer dúvidas junto aos principais envolvidos;
-> * **Highlights de pesquisa**: um compilado das informações levantadas durante as entrevistas realizadas.
+![Matriz de Alinhamento CSD](https://github.com/user-attachments/assets/9b776702-90a9-4c14-8974-459758096b03)
 
-> **Links úteis**:
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+![Mapa de Stakeholders](https://github.com/user-attachments/assets/37b7ce1a-ae55-47d5-85d1-5d24756324a7)
+
+![Entrevista Qualitativa](https://github.com/user-attachments/assets/d8123a0f-2912-4acf-95d8-2293f9e6b5bb)
+
+![Highlights de Pesquisa](https://github.com/user-attachments/assets/379cb1af-54cc-4036-ad38-cc31463ca19b)
 
 ## Etapa de definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+![Persona 02](https://github.com/user-attachments/assets/82050f85-c9e5-4ad9-839b-e2f8981e2a5c)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Deve-se relacionar as personas identificadas no projeto, juntamente com os respectivos mapas de empatia. É importante enumerar e descrever de maneira precisa e personalizada todos os principais envolvidos na solução pretendida.
+![Persona 01](https://github.com/user-attachments/assets/d360c40a-6186-484c-bc3d-46fa08416baa)
 
-
-![Exemplo de persona](images/exemplo-persona.png)
-
-
-> **Links úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+![Persona 03](https://github.com/user-attachments/assets/65fd7a7e-2b05-480d-9466-1f8ad93350a4)
