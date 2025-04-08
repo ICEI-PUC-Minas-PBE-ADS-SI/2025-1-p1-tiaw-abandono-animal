@@ -1,25 +1,24 @@
-# Nome do projeto
+# Abandono Animal
 
-`CURSO: Coloque o nome do curso aqui, sem abreviações`
+`CURSO: Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
 
-`Xº semestre/ANO`
+`1º semestre/2025`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O projeto tem como objetivo desenvolver uma plataforma digital voltada à causa do abandono de animais, promovendo a adoção responsável e oferecendo visibilidade para pets resgatados por ONGs e protetores independentes. A iniciativa busca facilitar o processo de adoção por meio de uma ferramenta intuitiva e acessível, que conecta adotantes e doadores de forma simples e segura. A proposta é unir tecnologia e empatia para transformar realidades e proporcionar novos começos tanto para os animais quanto para as pessoas que os acolhem.
 
 ## Integrantes
 
-* Esther
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Esther Ventura
+* Rodrigo Diniz
+* Renan Guerra
+* Guilherme Wagner
+* Yuri Dias
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Jardell Fillipe da Silva 
 
 ## Instruções de utilização
 
