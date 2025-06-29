@@ -1,6 +1,5 @@
 # Template padrão da aplicação
 
-Identidade Visual
 A identidade visual da aplicação Patas&Lares foi cuidadosamente planejada para comunicar empatia, cuidado e responsabilidade social com os animais. As cores foram escolhidas para criar um ambiente acolhedor e amigável ao usuário. A fonte utilizada é legível e moderna, garantindo acessibilidade em diversos dispositivos. Os elementos visuais, como bordas arredondadas e espaçamento generoso, contribuem para uma experiência de navegação agradável e intuitiva. A logo com a pata representa claramente o propósito da plataforma, reforçando a conexão com a causa animal.
 
 Paleta de cores:
