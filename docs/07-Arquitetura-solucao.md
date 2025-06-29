@@ -2,108 +2,119 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura da aplicação **Patas&Lares** foi estruturada de forma simples, modular e eficiente, ideal para projetos acadêmicos com foco em usabilidade, acessibilidade e organização de dados em ambiente web.
 
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+A aplicação é composta por páginas estáticas HTML/CSS/JS, manipuladas dinamicamente com JavaScript, e armazenamento local (via localStorage e JSON Server). A hospedagem foi feita no **Replit**, com versionamento e colaboração por meio do **GitHub**.
 
-## Funcionalidades
+A estrutura da aplicação pode ser dividida em três grandes blocos:
 
-Esta seção apresenta as funcionalidades da solução.
+1. **Front-end Web Responsivo:**
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+ - HTML5, CSS3 e JavaScript puro;
+ - Uso de Bootstrap para responsividade;
+ - Ícones da biblioteca Font Awesome;
+ - Layout dividido em componentes reutilizáveis: cabeçalho, conteúdo e rodapé.
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+2. **Armazenamento e Dados:**
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
-* **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
-* **Tela da funcionalidade**:
-
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
-
-### Estruturas de dados
-
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
-
-##### Estrutura de dados - Contatos
-
-Contatos da aplicação
-
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+ - Utilização de localStorage para armazenar dados do navegador localmente;
+ - Arquivo dados.json simula um banco de dados inicial;
+ - API local com JSON Server para simular requisições CRUD (Create, Read, Update, Delete).
   
+3. **Ambiente de Hospedagem e Colaboração:**
+
+ - Replit: plataforma utilizada para hospedagem e testes online;
+ - GitHub: controle de versão e repositório colaborativo;
+ - GitHub Projects: gerenciamento de tarefas com Kanban.
+
+## Funcionalidades da Aplicação 
+
+**Cadastro e Gerenciamento de Animais:** Permite a inclusão, visualização, edição e exclusão de animais disponíveis para adoção.
+
+- Estrtura de dados: Animais
+- Acesso:
+  - Página: cadastroAnimal.html
+  - Dados armazenados via localStorage
+- Telas:
+  - Formulário de cadastro com preview de imagem;
+  - Tabela com animais cadastrados;
+  - Botões de edição e exclusão. 
+
+**Visualização de Animais na Página Principal:** Exibe todos os animais cadastrados, integrando os dados do JSON local e do localStorage.
+
+- Página: index.html
+- Arquivo JS: paginaPrincipal.js
+
+**Sistema de Login e Cadastro de Usuários e Ongs:** Permite que usuários e ongs se cadastrem, façam login e vejam seus dados no cabeçalho.
+
+- Página: login.html, cadastroUsuario.html
+- Autenticação via: localStorage
+
+**Denúncias de Maus-tratos:** Formulário para envio de denúncias anônimas com campos de localização, descrição e imagem.
+
+- Página: denuncias.html
+
+**Blog Informativo:** Postagens com conteúdo educativo e notícias sobre adoção responsável.
+
+- Página: blog.html
+- 
+![Captura de tela 2025-06-29 191955](https://github.com/user-attachments/assets/040b0a03-61d0-4bc0-b30c-c88d14cf28a5)
+
+<br>
+
+# Estrutura de Dados
+
+**Estrutura de dados - Animais** 
+
+```json
+{
+   "id": 1,                                               
+   "nome": "Bidu",                                       
+   "idade": "24",                                                   
+   "especie": "Cachorro",                                           
+   "raca": "Vira-lata",                                              
+   "porte": "Médio",                                               
+   "sexo": "Macho",                                                 
+   "vacinado": true,                                               
+   "castrado": false,                                              
+   "descricao": "Muito brincalhão e carinhoso.",                          
+   "foto": "base64 ou URL da imagem",                                     
+   "localizacao": "Belo Horizonte - MG",                                    
+   "nomeResponsavel": "Joana Silva",                                   
+   "emailResponsavel": "joana@email.com",                                      
+   "telefoneResponsavel": "31999999999"                                        
+}
+
 ```
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
-
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+##### Estrutura de dados - Usuários 
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
+    id: 1,
+    nome: "Joao Souza",
+    email: "joao@email.com",
+    senha: "senha123"
   }
+
 ```
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação, quanto outras estruturas que foram criadas para algum tipo de configuração.
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+# Módulos, bibliotecas e APIs Utilizadas
 
-### Módulos e APIs
+|  Tipo   |          Tecnologia                               | Fiinalidade |
+| ------ | -------------------------------------------------------- | ---------- |
+| Framework CSS | Bootstrap 5 | Layout responsivo e estilização |
+| Biblioteca de ícones | Font Awesome 4.7 | Ícones para UI (olho, pata etc.) |    
+| Scripts | JavaScript |Manipulação do DOM, eventos e dados |
+| Servidor local | JSON Server | Simulação de API REST para testes |
+| Hospedagem | Replit |Deploy gratuito e testes |
+| Controle de versão | GitHub | Armazenamento, colaboração e versionamento|
+| Gerenciamento de tarefas | GitHub Projects (Kanban) | Planejamento e controle de sprints |
 
-Esta seção apresenta os módulos e APIs utilizados na solução.
+# Hospedagem da Aplicação 
 
-**Images**:
+A aplicação foi publicada e testada na plataforma Replit, permitindo a visualização em tempo real sem necessidade de servidor backend robusto.
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
-
-**Fonts:**
-
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
-
-**Scripts:**
-
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
-
-
-## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
-
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+- Ambiente de deploy: Replit
+- Deploy automático ao salvar o projeto no editor online;
+- Links acessíveis via navegador (inserir o link da versão hospedada quando disponível).
