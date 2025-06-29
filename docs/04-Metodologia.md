@@ -12,6 +12,7 @@ Para o desenvolvimento do projeto, adototamos uma abordagem centrada no usuário
 | Mapeamento e ideação | Miro | https://miro.com/app/dashboard/ |    
 | Prototipagem de interfaces | Figma |(https://www.figma.com/files/team/1490786836665517932/project/364412873/Abandono-Animal?fuid=1490786834889552139) |
 | Documentação do projeto | GitHub | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-abandono-animal/tree/main | 
+| Desenvolvimento do Site | Visual Studio Code | 
 
 ## Controle de versão
 
