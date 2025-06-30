@@ -8,10 +8,10 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 |  Caso de teste   | Descrição    |  Requisito Associado    | Link para Evidência |
 | ------ | ----------------------------- | ------------------------- | ---------- |
-| CT-001 | 	Login de usuário com dados válidos | RF-001 – Login de usuário | https://github.com/user-attachments/assets/81e57a68-6a79-4632-a856-e1e0c5664fe8 |
-| CT-002 | Enviar denúncia |RF-002 – Enviar denúncias | https://github.com/user-attachments/assets/413ae993-c5cb-4d41-82c5-db517cdd570e |
-| CT-003| Preencher e enviar formulário de adoção | RF-003 – Formulário de adoção| https://github.com/user-attachments/assets/741d6c50-4ace-42fd-9b3c-af468eed7fe0 |
-| CT-004 | Enviar formulário de doações | RF-004 – Formulário de doação| https://github.com/user-attachments/assets/ca97d8c4-f373-48db-be1d-f7ad395fa140 |
+| CT-001 | 	Login de usuário com dados válidos | RF-001 – Login de usuário | https://github.com/user-attachments/assets/208bc9b8-0484-4346-bd58-f96ac2a6217c |
+| CT-002 | Enviar denúncia |RF-002 – Enviar denúncias | https://github.com/user-attachments/assets/9388c26c-cf66-420a-902a-e58df08d1951 |
+| CT-003| Preencher e enviar formulário de adoção | RF-003 – Formulário de adoção| https://github.com/user-attachments/assets/3464de80-9750-4a55-a5ea-f1de1500731e |
+| CT-004 | Enviar formulário de doações | RF-004 – Formulário de doação| https://github.com/user-attachments/assets/2dd37d48-5029-497b-8c8e-1021704458dd |
 
 ## Avaliação
 
