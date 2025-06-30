@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de ONG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #141003;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #ffd26085;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background-color: #bbb;
+        }
+
+        .btn-voltar {
+            margin-left: 10px;
+            font-size: 1rem;
+            margin-top: 15px;
+            padding: 10px 20px;
+            color: black;
+            background-color: #ccc;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-voltar:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="cadastro_concluido.html" method="get">
+            <label for="nome_ong">Nome da ONG</label>
+            <input type="text" id="nome_ong" name="nome_ong" required>
+
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" required pattern="\d{14}" title="Digite exatamente 14 números">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contato">Contato</label>
+            <input type="text" id="contato" name="contato" required pattern="\d{10,15}"
+                title="Digite um número de telefone válido (10 a 15 dígitos)">
+
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" name="observacoes"></textarea>
+
+            <button type="submit">Concluir cadastro</button>
+            <a href="ongs_protetores.html" class="btn-voltar">Voltar</a>
+        </form>
+    </div>
+
+</body>
+
+</html>

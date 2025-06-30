@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil do Usuário - Patas&Lares</title>
+  <link rel="stylesheet" href="paginausuário.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="logo">
+        <a href="index.html">Patas&Lares</a>
+    </div>
+
+    <nav class="nav-links">
+        <ul>
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="ongs_protetore.html">ONGs/Protetores</a></li>
+            <li><a href="denuncias.html">Denúncias</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-entrar"><a href="login.html">Entrar</a></div>
+  </header>
+
+  <main class="perfil-container">
+    <h1>Meu Perfil</h1>
+    <form class="perfil-form">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" value="Rodrigo" />
+      </div>
+
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" value="Diniz" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" value="rodrigo@email.com"  />
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" value="(31) 99999-9999"  />
+      </div>
+
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" value="28"  />
+      </div>
+
+      <div class="form-group">
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" value="1996-04-15" />
+      </div>
+
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" value="Rua dos Animais, 123" />
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" value="Belo Horizonte" />
+      </div>
+
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" value="MG" />
+      </div>
+
+      <button type="submit">Salvar Alterações</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+        <div class="footer-col">
+            <h3>Colabore</h3>
+            <a href="doacoes.html">Doe qualquer valor</a><br />
+            <a href="voluntarios.html">Quer se voluntariar</a>
+        </div>
+        <div class="footer-col">
+            <h3>Adote</h3>
+            <a href="blog.html">Adote com Responsabilidade</a>
+        </div>
+        <div class="footer-col">
+            <h3>Perfil</h3>
+            <a href="cadastroUsuario.html">Cadastre-se</a><br />
+            <a href="login.html">Minha página de perfil</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const token = localStorage.getItem("token");
+    const user = JSON.parse(localStorage.getItem("userLogado"));
+
+    if (!token || !user) {
+      window.location.href = "login.html";
+      return;
+    }
+
+    document.querySelector("#nome").value = user.nome;
+    document.querySelector("#sobrenome").value = user.sobrenome || "";
+    document.querySelector("#email").value = user.email;
+    document.querySelector("#telefone").value = user.telefone;
+    document.querySelector("#idade").value = user.idade;
+    document.querySelector("#nascimento").value = user.nascimento;
+    document.querySelector("#endereco").value = user.endereco;
+    document.querySelector("#cidade").value = user.cidade;
+    document.querySelector("#estado").value = user.estado;
+  });
+
+  document.querySelector(".perfil-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const userAtualizado = {
+      nome: document.querySelector("#nome").value,
+      sobrenome: document.querySelector("#sobrenome").value,
+      email: document.querySelector("#email").value,
+      telefone: document.querySelector("#telefone").value,
+      idade: document.querySelector("#idade").value,
+      nascimento: document.querySelector("#nascimento").value,
+      endereco: document.querySelector("#endereco").value,
+      cidade: document.querySelector("#cidade").value,
+      estado: document.querySelector("#estado").value,
+      user: JSON.parse(localStorage.getItem("userLogado")).user,
+      senha: JSON.parse(localStorage.getItem("userLogado")).senha
+    };
+
+    let listaUser = JSON.parse(localStorage.getItem("listaUser")) || [];
+    const index = listaUser.findIndex(u => u.user === userAtualizado.user || u.userCad === userAtualizado.user);
+
+    if (index !== -1) {
+      listaUser[index] = {
+        nomeCad: userAtualizado.nome,
+        sobrenomeCad: userAtualizado.sobrenome,
+        emailCad: userAtualizado.email,
+        telefoneCad: userAtualizado.telefone,
+        idadeCad: userAtualizado.idade,
+        nascimentoCad: userAtualizado.nascimento,
+        enderecoCad: userAtualizado.endereco,
+        cidadeCad: userAtualizado.cidade,
+        estadoCad: userAtualizado.estado,
+        userCad: userAtualizado.user,
+        senhaCad: userAtualizado.senha
+      };
+
+      localStorage.setItem("listaUser", JSON.stringify(listaUser));
+      localStorage.setItem("userLogado", JSON.stringify(userAtualizado));
+      alert("Dados atualizados com sucesso!");
+    }
+  });
+</script>
+
+
+</body>
+</html>
