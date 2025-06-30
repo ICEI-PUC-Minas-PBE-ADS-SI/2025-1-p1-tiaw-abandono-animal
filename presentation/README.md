@@ -7,6 +7,9 @@
 
 [Abandono Animal.pdf](https://github.com/user-attachments/files/19658475/Abandono.Animal.pdf)
 
+[Patas&Lares - Apresentação Final.pdf](https://github.com/user-attachments/files/20971651/Patas.Lares.-.Apresentacao.Final.pdf)
+
+
 
 
 ## Vídeo
